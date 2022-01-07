@@ -1,0 +1,18 @@
+# Why
+Using separate LookML files to build models and views is modular and very convenient.
+However, for those who are not familiar with the file strcuture or to non-technical (like technical writers and product teams), understanding the definition of every field and the connection between fields and views could be challenging to undersatnd and maintain.
+
+# What
+With this set of scripts, one can:
+1. Scan a repository of LookML files and extract all fields to a table, includin the definition of each field and the views they appear in.
+2. Update an entire repository from a single table that describes new / updated fields.
+
+Both tables - the one that is created and the one that is used as a baseline - are provided in CSV format, so they can be used both for documentation as well as a convenient method to perform bulk updates 
+
+# How to use
+lookeytoolz has 2 working modes: export and update.
+With export, the script scans the provided directory recursively and provides a CSV file with all dimensions and measures in the files found in that path.
+With update, the script recieves a CSV table as input and updates all the files and fields that are mentioned in the table.
+
+Configuring the script is done by providing the script with a configuration file. 
+example_config.json contains explanations and examples for each of the required parameters.
