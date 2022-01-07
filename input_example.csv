@@ -1,0 +1,2 @@
+file,field_type,name,type,sql,label,description
+some_view/custom_attrs_view_file.view.lkml,dimension,attribute5,string,${TABLE}.attribute5,this is attribute5,this is attribute5 description

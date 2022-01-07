@@ -1,0 +1,18 @@
+{   
+    "_title": "This is a configuration file to be used by Lookey Toolz. Comments and examples are stored in keys beginning with '_'",	
+    "_comment": "All basepath shall end with a trailing slash, e.g /my/path/",
+    "_basepath_comment": "path to a folder containitng Lookml files. e.g /Users/minime/Repos/looker/views/", 
+    "basepath": "", 
+    "export": {
+	    "_destination_filepath_comment": "path and name of output file (CSV format)",
+	    "destination_filepath": ""
+    },
+    "update": {
+        "use_regex_for_file_matching": "Not in use",
+        "_source_filepath_comment": "CSV file storing all fields. Should have the following columns: file|field_type|name|type|sql|label|description. see example is input_example.csv",
+        "source_filepath": "",
+	"_updated_files_basepath_commens": "Path to store the modified files. To use auto_updater, updated_files_basepath should be equal to basepath",
+	"updated_files_basepath": ""
+    },
+    "_concluding_notes": "Eat more carrots"
+}
