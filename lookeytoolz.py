@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
 
 import lkml
-from lkml.visitors import BasicVisitor, BasicTransformer
-from lkml.tree import BlockNode, ListNode, PairNode, SyntaxNode, SyntaxToken, ExpressionSyntaxToken, DocumentNode, ContainerNode 
+from lkml.visitors import BasicVisitor
+from lkml.tree import BlockNode
 import pandas as pd
 import json
 
 import glob, os
-
-import bpdb
-from typing import Union
-from colorama import Fore
 
 import argparse
 import logging
