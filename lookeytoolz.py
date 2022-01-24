@@ -66,7 +66,6 @@ def export(basepath, output_file):
 
 def update_views(basepath, input_file, anchor):
 
-    basepath = '/Users/raziel.einhorn/WalkMeRepos/looker-templates/views'
     proj = lookml.Project(path= basepath)
 
     df = pd.read_csv(input_file)
