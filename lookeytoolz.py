@@ -35,7 +35,6 @@ class AttributesExtractor(BasicVisitor):
 def export(basepath, output_file):
 
     # root_dir needs a trailing slash (i.e. /root/dir/)
-    basepath = '/Users/raziel.einhorn/WalkMeRepos/looker-templates/views/'
 
     df = pd.DataFrame()
     
